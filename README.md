@@ -22,6 +22,7 @@ Based on alpine linux
 - SNMP_BOOTS="" &mdash; default destination engine boots/time
 
 ## Volumes
+- /usr/local/bin &mdash; folder for python executables
 - /usr/local/lib/python &mdash; folder for python modules
 - /usr/local/share/snmp/mibs &mdash; folder for Asn1 mib modules
 - /usr/local/share/snmp/pysnmp_mibs &mdash; folder for PySNMP compiled mib modules
