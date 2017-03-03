@@ -21,6 +21,11 @@ Based on alpine linux
 - SNMP_PPASSPHRASE="**pass**" &mdash; default privacy protocol pass phrase
 - SNMP_BOOTS="" &mdash; default destination engine boots/time
 
+*Other SNMP variables
+- MIBS_PATH &mdash; path to additional Asn1 mib modules
+- PySNMP_MIBS_PATH &mdash; path to additional PySNMP compiled mib modules
+- PYTHONPATH &mdash; path to user python modules
+
 ## Volumes
 - /usr/local/bin &mdash; folder for python executables
 - /usr/local/lib/python &mdash; folder for python modules
