@@ -27,4 +27,4 @@ Based on alpine linux
 - /usr/local/share/snmp/pysnmp_mibs &mdash; folder for PySNMP compiled mib modules
 
 ## BUILD
-    docker build source/ --tag vkushnir/pysnmp:<pysnmp version>-py<python version>
+    docker build source/ --tag vkushnir/pysnmp-py2:<pysnmp version>
