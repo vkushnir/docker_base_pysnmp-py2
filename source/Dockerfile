@@ -19,10 +19,10 @@ ENV \
     PYTHONPATH="/usr/local/lib/python"
 
 RUN apk update && apk upgrade && \
-    apk del --purge rsyslog
-
-RUN rm -f /var/log/* /sbin/rsyslogd && \
-    apk add --no-cache --update python2 py2-pip py2-snmp
+    apk del --purge rsyslog && \
+    rm -f /var/log/* /sbin/rsyslogd
+    
+RUN apk add --no-cache --update python2 py2-pip py2-snmp
 
 RUN pip install --upgrade pip && \
     pip install pysmi pysnmp_mibs pysnmp_apps
