@@ -16,6 +16,8 @@ ENV \
     SNMP_PPROTOCOL="DES" \
     SNMP_PPASSPHRASE="pass" \
     SNMP_BOOTS_TIME="" \
+    MIBS_PATH="/usr/local/share/snmp/mibs" \
+    PySNMP_MIBS_PATH="/usr/local/share/snmp/pysnmp_mibs" \
     PYTHONPATH="/usr/local/lib/python"
 
 RUN apk update && apk upgrade && \
