@@ -1,0 +1,7 @@
+cmd: "docker"
+name: "pysnmp-py2"
+args:
+    - "build"
+    - "{PROJECT_PATH}\\source\\"
+    - "--tag"
+    - "vkushnir/pysnmp-py2"
