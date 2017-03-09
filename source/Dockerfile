@@ -23,11 +23,11 @@ ENV \
 RUN apk update && apk upgrade && \
     apk del --purge rsyslog && \
     rm -f /var/log/* /sbin/rsyslogd
-    
+
 RUN apk add --no-cache --update python2 py2-pip py2-snmp
 
 RUN pip install --upgrade pip && \
-    pip install pysmi pysnmp_mibs pysnmp_apps
+    pip install pysmi pysnmp_mibs pysnmp_apps pushover
 
 RUN rm /var/cache/apk/*
 
@@ -38,4 +38,3 @@ VOLUME \
     /usr/local/share/snmp/pysnmp_mibs
 
 ENTRYPOINT ["python"]
-
