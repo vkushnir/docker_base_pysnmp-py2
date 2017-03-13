@@ -27,7 +27,7 @@ RUN apk update && apk upgrade && \
 RUN apk add --no-cache --update python2 py2-pip py2-snmp
 
 RUN pip install --upgrade pip && \
-    pip install pysmi pysnmp_mibs pysnmp_apps pushover
+    pip install pysmi pysnmp_mibs pysnmp_apps pushover_complete
 
 RUN rm /var/cache/apk/*
 
